@@ -30,7 +30,7 @@ model_args:
   groups: 16
   block_size: 41
   graph_args:
-    labeling_mode: 'spatial'
+    labeling_mode: "spatial"
 
 #optim
 weight_decay: 0.0001
@@ -38,7 +38,7 @@ base_lr: 0.1
 step: [150, 200]
 
 # training
-device: [0,1]
+device: [0]
 weights: save_models/csl_joint-182.pt
 start_epoch: 183
 keep_rate: 0.9

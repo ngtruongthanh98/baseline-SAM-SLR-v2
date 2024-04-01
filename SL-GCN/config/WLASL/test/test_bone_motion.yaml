@@ -40,7 +40,7 @@ base_lr: 0.1
 step: [150, 200]
 
 # testing
-device: [0,1]
+device: [0]
 phase: test
 weights: save_models/csl_bone_motion-230.pt
 keep_rate: 0.9

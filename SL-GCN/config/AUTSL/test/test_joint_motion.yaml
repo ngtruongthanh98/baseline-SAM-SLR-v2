@@ -20,7 +20,7 @@ test_feeder_args:
   normalization: True
   is_vector: True
   debug: False
-  
+
 # model
 model: model.decouple_gcn_attn.Model
 model_args:
@@ -39,7 +39,7 @@ base_lr: 0.01
 step: [50]
 
 # training
-device: [0,1]
+device: [0]
 phase: test
 weights: final_models/27_2/joint_motion_248_9301.pt
 keep_rate: 0.9
