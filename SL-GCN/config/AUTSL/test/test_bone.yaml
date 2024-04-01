@@ -3,8 +3,10 @@ Experiment_name: bone_27_2_test
 # feeder
 feeder: feeders.feeder.Feeder
 train_feeder_args:
-  data_path: ./data/sign/27_2/train_val_data_bone.npy
-  label_path: ./data/sign/27_2/train_val_labels.pkl
+  # data_path: ./data/sign/27_2/train_val_data_bone.npy
+  data_path: data/AUTSL/skeleton/train_data_bone.npy
+  # label_path: ./data/sign/27_2/train_val_labels.pkl
+  label_path: data/AUTSL/skeleton/train_label.pkl
   debug: False
   random_choose: True
   random_shift: True
@@ -15,8 +17,10 @@ train_feeder_args:
   is_vector: True
 
 test_feeder_args:
-  data_path: ./data/sign/27_2/test_data_bone.npy
-  label_path: ./data/sign/27_2/test_labels_pseudo.pkl
+  # data_path: ./data/sign/27_2/test_data_bone.npy
+  data_path: data/AUTSL/skeleton/test_data_bone.npy
+  # label_path: ./data/sign/27_2/test_labels_pseudo.pkl
+  label_path: data/AUTSL/skeleton/test_labels.csv
   random_mirror: False
   normalization: True
   is_vector: True
@@ -32,7 +36,7 @@ model_args:
   groups: 16
   block_size: 41
   graph_args:
-    labeling_mode: 'spatial'
+    labeling_mode: "spatial"
 
 #optim
 weight_decay: 0.0001
@@ -42,7 +46,7 @@ step: [50]
 # training
 device: [0]
 phase: test
-weights: final_models/27_2/bone_epoch_239_9470.pt
+weights: save_models/bone_epoch_239_9470.pt
 keep_rate: 0.9
 only_train_epoch: 1
 batch_size: 64

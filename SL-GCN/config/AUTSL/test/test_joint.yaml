@@ -3,8 +3,10 @@ Experiment_name: joint_27_2_test
 # feeder
 feeder: feeders.feeder.Feeder
 train_feeder_args:
-  data_path: ./data/sign/27_2/train_val_data_joint.npy
-  label_path: ./data/sign/27_2/train_val_labels.pkl
+  # data_path: ./data/sign/27_2/train_val_data_joint.npy
+  data_path: data/AUTSL/skeleton/train_data_joint.npy
+  # label_path: ./data/sign/27_2/train_val_labels.pkl
+  data_path: data/AUTSL/skeleton/train_label.pkl
   debug: False
   random_choose: True
   window_size: 100
@@ -15,8 +17,10 @@ train_feeder_args:
   is_vector: False
 
 test_feeder_args:
-  data_path: ./data/sign/27_2/test_data_joint.npy
-  label_path: ./data/sign/27_2/test_labels_pseudo.pkl
+  # data_path: ./data/sign/27_2/test_data_joint.npy
+  data_path: data/AUTSL/skeleton/test_data_joint.npy
+  # label_path: ./data/sign/27_2/test_labels_pseudo.pkl
+  label_path: data/AUTSL/skeleton/test_labels.pkl
   random_mirror: False
   normalization: True
   debug: False
@@ -41,7 +45,7 @@ step: [50]
 # training
 device: [0]
 phase: test
-weights: final_models/27_2/joint_epoch_226_9468.pt
+weights: save_models/joint_epoch_226_9468.pt
 keep_rate: 0.9
 only_train_epoch: 1
 batch_size: 64
