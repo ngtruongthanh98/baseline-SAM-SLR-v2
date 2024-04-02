@@ -3,8 +3,8 @@ Experiment_name: csl_bone_test
 # feeder
 feeder: feeders.feeder.Feeder
 train_feeder_args:
-  data_path: /home/songyao/data/data/CSL/skeleton/train_data_bone.npy
-  label_path: /home/songyao/data/data/CSL/skeleton/train_label.pkl
+  data_path: data/CSL/train_data_bone.npy
+  label_path: data/CSL/train_label.pkl
   debug: False
   random_choose: True
   random_shift: True
@@ -15,8 +15,8 @@ train_feeder_args:
   is_vector: True
 
 test_feeder_args:
-  data_path: /home/songyao/data/data/CSL/skeleton/val_data_bone.npy
-  label_path: /home/songyao/data/data/CSL/skeleton/val_label.pkl
+  data_path: data/CSL/val_data_bone.npy
+  label_path: data/CSL/val_label.pkl
   random_mirror: False
   normalization: True
   is_vector: True

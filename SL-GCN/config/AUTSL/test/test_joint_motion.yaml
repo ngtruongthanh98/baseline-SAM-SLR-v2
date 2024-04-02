@@ -45,7 +45,7 @@ step: [50]
 # training
 device: [0]
 phase: test
-weights: save_models/joint_motion_248_9301.pt
+weights: save_models/autsl_joint_motion_248.pt
 keep_rate: 0.9
 only_train_epoch: 1
 batch_size: 64
