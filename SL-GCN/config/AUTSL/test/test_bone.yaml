@@ -17,10 +17,8 @@ train_feeder_args:
   is_vector: True
 
 test_feeder_args:
-  # data_path: ./data/sign/27_2/test_data_bone.npy
-  data_path: data/AUTSL/skeleton/test_data_bone.npy
-  # label_path: ./data/sign/27_2/test_labels_pseudo.pkl
-  label_path: data/AUTSL/skeleton/test_labels.csv
+  data_path: /content/data/AUTSL/skeleton/val_data_bone.npy
+  label_path: /content/data/AUTSL/skeleton/val_gt.pkl
   random_mirror: False
   normalization: True
   is_vector: True
@@ -46,7 +44,7 @@ step: [50]
 # training
 device: [0]
 phase: test
-weights: save_models/autsl_bone_epoch_239.pt
+weights: /content/save_models/autsl_bone_epoch_239.pt
 keep_rate: 0.9
 only_train_epoch: 1
 batch_size: 64
