@@ -43,7 +43,7 @@ step: [50]
 # training
 device: [0]
 phase: test
-weights: save_models/joint_epoch_226_9468.pt
+weights: save_models/autsl_joint_epoch_226.pt
 keep_rate: 0.9
 only_train_epoch: 1
 batch_size: 64
