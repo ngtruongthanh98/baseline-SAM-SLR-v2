@@ -17,8 +17,8 @@ train_feeder_args:
   is_vector: True
 
 test_feeder_args:
-  data_path: ./data/sign/27_2/val_data_bone_motion.npy
-  label_path: ./data/sign/27_2/val_gt.pkl
+  data_path: data/AUTSL/skeleton/val_data_bone_motion.npy
+  label_path: data/AUTSL/skeleton/val_gt.pkl
   random_mirror: False
   normalization: True
   is_vector: True
