@@ -6,7 +6,7 @@ train_feeder_args:
   # data_path: ./data/sign/27_2/train_val_data_joint.npy
   data_path: data/AUTSL/skeleton/train_data_joint.npy
   # label_path: ./data/sign/27_2/train_val_labels.pkl
-  data_path: data/AUTSL/skeleton/train_label.pkl
+  label_path: data/AUTSL/skeleton/train_label.pkl
   debug: False
   random_choose: True
   window_size: 100
