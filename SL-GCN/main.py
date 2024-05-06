@@ -192,7 +192,7 @@ class Processor():
 
     def __init__(self, arg):
 
-        arg.model_saved_name = "./save_models/" + arg.Experiment_name + '-final'
+        arg.model_saved_name = "./save_models/" + arg.Experiment_name + '_final'
         arg.work_dir = "./work_dir/" + arg.Experiment_name
         self.arg = arg
         self.save_arg()
