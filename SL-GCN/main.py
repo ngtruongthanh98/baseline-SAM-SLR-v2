@@ -242,7 +242,7 @@ class Processor():
         Model = import_class(self.arg.model)
         shutil.copy2(inspect.getfile(Model), self.arg.work_dir)
         self.model = Model(**self.arg.model_args).cuda(output_device)
-        # print(self.model)
+        print(self.model)
         self.loss = nn.CrossEntropyLoss().cuda(output_device)
         # self.loss = LabelSmoothingCrossEntropy().cuda(output_device)
 
